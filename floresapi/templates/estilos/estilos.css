@@ -1,0 +1,60 @@
+/*
+Tipos de selectores: dentro de css hay 4 tipos de selectores
+selector universal: aplica estilos a todo el documento
+selector tributo o selector o etiqueta: Aplica estilos a toda la s etiquetas 
+que llevan ese nombre
+selector tipo clase: Aplica los estlos al selector que tiene esa clase
+selector tipo id: aplica estilos a la etiqueta que tiene ese id, este tipo
+de selector se lo puede usar una sola vez dentro de html.*/
+
+/* le damos estilos al body*/
+body {
+    /*tipo de letra*/
+    font-family: Arial;
+    /*Color de fondo del body*/
+    background: rgba(68, 255, 230, 0.267);
+    /*Margenes internos del contenedor del body*/
+    padding: 40px;
+}
+
+/*Voy  darle estilos a un contenedor con la clase container*/
+.container{
+    /*Le damos una anchura al contenedro*/
+    width: 400px;
+    /*Colocamos el formulario en la mitad de la pantalla*/
+    margin: auto;
+    /*Le damos un color solo al contenedro*/
+    background: rgba(168, 255, 68, 0.267);
+    /*Bordes internos*/
+    padding: 30px;
+    /*Borde redondeado*/
+    border-radius: 10px;
+    
+}
+input{
+    /*Le damos una anchura al input utilizamso medidas relativas: Dentro de css
+    existem dos tipos de medidas, relativas y absolutas.
+    La relativas cambian a conveniencia del tamaño de pantalla para estas medidas utilizamos el %
+    Las medidas absolutasno cambian el tamaño de los componentes estan siempre fijo y no
+    importa el tamaño de la pantalla*/
+    width: 100%;
+    /*le damos bordes internos*/
+    padding: 10px;
+}
+button{
+    margin-top: 200;
+    width: 100;
+    padding: 10px;
+    background-color: brown;
+    /*Quito los bordes*/
+    border: none;
+    /*Cambio del tipo del cursor*/
+    cursor: pointer;
+}
+/*Le damos estilo al contenedor donde se muestra el resultado*/
+.resultado{
+    margin-top: 20px;
+    background-color: chocolate;
+    padding: 15px;
+    border-radius: 5px;
+}

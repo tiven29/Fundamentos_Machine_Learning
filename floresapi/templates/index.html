@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Implementamos CSS-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Proyecto Machine Learning</title>
+</head>
+<body>
+    <!--Creamos un contenedor div que va a contener el formulario-->
+    <div class="container">
+        <h2>Prediccion Machine Learning Flores Iris</h2>
+
+        <!--Implementamos el formulario-->
+        <form action="/predict" method="post">
+            
+            <input type="number" name="atributo1" id="atributo1" placeholder="Ingrese el ancho del cepalo" required step="any">
+            
+            <input type="number" name="atributo2" id="atributo2" placeholder="Ingrese la anchura del sepalo" required step="any">
+            
+            <input type="number" name="atributo3" id="atributo3" placeholder="Ingrese el tamaño del petalo" required step="any">
+            
+            <input type="number" name="atributo4" id="atributo4" placeholder="Ingrese la anchura del petalo" required step="any">
+
+            <!--Implementamos un boton-->
+
+            <button type="submit">Predecir</button>
+
+        </form>
+        <!--Implementamos el resultado de la prediccion-->
+        <div class="resultado">
+            <h3>Resultado</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
