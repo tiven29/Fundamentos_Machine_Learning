@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Implementamos CSS-->
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="/static/estilos/estilos.css">
     <title>Proyecto Machine Learning</title>
 </head>
 <body>
@@ -29,9 +29,16 @@
 
         </form>
         <!--Implementamos el resultado de la prediccion-->
+        {% if resultado != None %}
         <div class="resultado">
             <h3>Resultado</h3>
+            <p>
+                Prediccion : {{resultado}}
+                <br>
+                Mensaje: {{mensaje}}
+            </p>
         </div>
+        {% endif %}
     </div>
     
 </body>
