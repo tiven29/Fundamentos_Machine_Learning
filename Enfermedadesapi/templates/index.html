@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Implementamos estilo CSS-->
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <title>Agente Enfermedades Cardíacas</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Predicción Machine Learning: Enfermedades Cardíacas</h2>
+        
+        <!-- Formulario Médico -->
+        <form action="/predict" method="post">
+            
+            <input type="number" name="age" id="age" placeholder="Ingrese su edad actual en años" min="1" max="120" required>
+            
+            <input type="number" name="sex" id="sex" placeholder="Ingrese su sexo (escriba 1 para Hombre o 0 para Mujer)" min="0" max="1" required>
+            
+            <input type="number" name="cp" id="cp" placeholder="Ingrese su tipo de dolor de pecho (escriba un número del 0 al 3)" min="0" max="3" required>
+            
+            <input type="number" name="trestbps" id="trestbps" placeholder="Ingrese el valor de su presión arterial en reposo" min="50" max="250" required>
+            
+            <input type="number" name="chol" id="chol" placeholder="Ingrese su nivel de colesterol que indica su examen" min="100" max="600" required>
+            
+            <input type="number" name="fbs" id="fbs" placeholder="Ingrese 1 si su azúcar en ayunas es alta, o 0 si es normal" min="0" max="1" required>
+            
+            <input type="number" name="restecg" id="restecg" placeholder="Ingrese el resultado de su electrocardiograma (del 0 al 2)" min="0" max="2" required>
+            
+            <input type="number" name="thalach" id="thalach" placeholder="Ingrese el número de pulsaciones máximas de su corazón" min="60" max="220" required>
+            
+            <input type="number" name="exang" id="exang" placeholder="Ingrese 1 si siente dolor de pecho al hacer ejercicio, o 0 si no" min="0" max="1" required>
+            
+            <input type="number" name="oldpeak" id="oldpeak" placeholder="Ingrese el valor numérico de la prueba de esfuerzo (ST)" step="any" min="0" max="10" required>
+            
+            <input type="number" name="slope" id="slope" placeholder="Ingrese el tipo de curva de su prueba cardíaca (del 0 al 2)" min="0" max="2" required>
+            
+            <input type="number" name="ca" id="ca" placeholder="Ingrese el número de vasos sanguíneos principales (del 0 al 4)" min="0" max="4" required>
+            
+            <input type="number" name="thal" id="thal" placeholder="Ingrese el resultado de su examen de Talasemia (del 0 al 3)" min="0" max="3" required>
+
+            <button type="submit" class="btn-predict">Predecir Riesgo Cardíaco</button>
+        
+        </form>
+
+        <!-- Bloque de Resultados (Procesado por Jinja2) -->
+        <div class="resultado">
+            <h3>Resultado del Diagnóstico</h3>
+        </div>
+      
+    </div>
+
+</body>
+</html>

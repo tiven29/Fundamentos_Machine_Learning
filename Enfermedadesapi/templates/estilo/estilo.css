@@ -1,0 +1,60 @@
+/*Desarrollamos el estilo a nuestra pagina web*/
+body{
+    /*Tipo de letra*/
+    font-family: Arial;
+    /*Asignamos color al fondo de nuestro body*/
+    background-color: aqua;
+    /*Margenes internos de nuestro contenedor body*/
+    padding: 40px;
+}
+/*Asignamos estilos a un contenedor con la clase container */
+.container{
+    /*Asignamos una anchura al contenedor*/
+    width: 600px;
+    /*Colocamos el formulario en el centro*/
+    margin: auto;
+    /*Asignamos un color solo al contenedor*/
+    background-color: aliceblue;
+    /*Bordes internos */
+    padding: 50px;
+    /*Borde redondeado*/
+    border-radius: 20px;
+}
+/*Asignamos estilos a nuestros inputs*/
+input{
+    display: block; /*Nos permite que los margenes auto funcionen*/
+    /*Asignamos una anchura a todos nuestros inputs*/
+    width: 500px;
+    /*Le damos bordes internos a todos los inputs*/
+    padding: 15px;
+    /*Creamos los margenes superirores*/
+    margin-top: 10px;
+    /*Colocamos en el centro los inputs*/
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Creamos los estilos al boton*/
+button{
+    display: block;
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px;
+    /*Colocamos en el centro nuestro boton de resultado*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(26, 212, 101);
+    /*Color a la letra*/
+    color: rgb(0, 0, 0);
+    /*Retiro los bordes*/
+    border: none;
+    /*Cambiamos el tipo de cursor*/
+    cursor: pointer;
+    border-radius: 10px;
+}
+/*Desarrollamos el estilo a nuestro bloque de resultado*/
+.resultado{
+    margin-top: 30px;
+    background-color: rgb(115, 183, 243);
+    padding: 15px;
+    border-radius: 10px;
+}
