@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Implementamos estilo CSS-->
-    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="stylesheet" href="/static/estilos/estilos.css">
     <title>Agente Enfermedades Cardíacas</title>
 </head>
 <body>
@@ -46,10 +46,16 @@
         </form>
 
         <!-- Bloque de Resultados (Procesado por Jinja2) -->
+         {% if resultado != None%}
         <div class="resultado">
             <h3>Resultado del Diagnóstico</h3>
+            <p>
+                Prediccion : {{resultado}}
+                <br>
+                Mensaje: {{mensaje}}
+            </p>
         </div>
-      
+        {% endif %}
     </div>
 
 </body>
